@@ -38,8 +38,8 @@ async function getQuoteFromAPI() {
         }
         quoteText.innerText = data.quoteText;
         removeLoadingSpinner();
-        // throw new Error('oops!')
     }
+    // throw new Error('oops!')
     catch (error) {
         console.log('oops no quote ', error);
         getQuoteFromAPI()
